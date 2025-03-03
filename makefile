@@ -1,3 +1,7 @@
+.PHONY: build
+build:
+	docker build . -t go-cli
+
 .PHONY: up
 up:
 	docker run -v ./:/app --name go-cli -itd go-cli
